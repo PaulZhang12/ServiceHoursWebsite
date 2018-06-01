@@ -1,0 +1,35 @@
+<html>
+<body>
+
+{% for row in data %}
+<table>
+<tr>
+	<th>ID</th>
+	<th>First Name</th>
+	<th>Last Name</th>
+	<th>Email</th>
+	<th>Class</th>
+	<th>Student Organization</th>
+	<th>Partner Organization</th>
+	<th>Hours Worked</th>
+	<th>Description</th>
+	<th>Student Participants</th>
+	<th>Comment</th> <br>
+</tr>
+<tr>	
+	<td>{{row[0]}}  </td>
+	<td>{{row[1]}}</td>
+	<td>{{row[2]}}</td>
+	<td>{{row[3]}}</td>
+	<td>{{row[4]}}</td>
+	<td>{{row[5]}}</td>
+	<td>{{row[6]}}</td>
+	<td>{{row[7]}}</td>
+	<td>{{row[8]}}</td>
+	<td>{{row[9]}}</td>
+	<td>{{row[10]}}</td><br>
+</tr>
+<table>
+{% endfor %}
+</body>
+</html>
